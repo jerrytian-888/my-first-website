@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Sidebar Menu</title>
+</head>
+
+<body>
+    <section></section>
+
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                    <span class="title">Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i></span>
+                    <span class="title">Messages</span>
+                    <span class="arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                </a>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="subtitle">In</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="subtitle">Sent</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                    <span class="title">Help</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                    <span class="title">Setting</span>
+                    <span class="arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="subtitle">In</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="subtitle">Sent</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    <span class="title">Password</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="toggle" onclick="toggleMenu()">
+        <div class="samllmenu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <content>
+        <div class="box">
+            <h2>Seach Box</h2>
+            <form action="#">
+                <input type="text" placeholder="Type Something...">
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <div class="banner">
+            <video src="thailand.mp4" muted autoplay loop type="mp4"></video>
+            <div class="textBox">
+                <h2>Wonderful Tailand</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ratione, et ea perspiciatis laborum doloremque maxime earum aut dolorem libero dolorum vel ducimus.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="videoBx">
+                <video src="thailand.mp4" muted autoplay loop type="mp4"></video>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </content>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
