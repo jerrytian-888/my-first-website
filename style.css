@@ -243,12 +243,105 @@ content .box {
     flex-direction: column;
 }
 
+content .shainBorder {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    /* background: #17d8d8; */
+    overflow: hidden;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
+}
+
+content .shainBorder span {
+    position: absolute;
+    display: block;
+    --span-width-height: 20px;
+}
+
+content .shainBorder span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: var(--span-width-height);
+    background: linear-gradient(90deg, transparent, #17d8ce);
+    animation: animationSpan1 1s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes animationSpan1 {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+content .shainBorder span:nth-child(3) {
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: var(--span-width-height);
+    background: linear-gradient( 270deg, transparent, #17d8d8);
+    animation: animationSpan3 1s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes animationSpan3 {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+content .shainBorder span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: var(--span-width-height);
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #17d8d8);
+    animation: animationSpan2 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animationSpan2 {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+content .shainBorder span:nth-child(4) {
+    top: -100%;
+    left: 0;
+    width: var(--span-width-height);
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #17d8d8);
+    animation: animationSpan4 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animationSpan4 {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
 content .box h2 {
-    color: rgb(11, 240, 221);
-    font-size: 2.5em;
+    position: relative;
+    color: rgb(11, 240, 121);
+    font-size: 1.9em;
     font-weight: 500;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     text-align: start;
+    top: -70px;
 }
 
 content .box form {
